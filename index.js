@@ -9,8 +9,8 @@ const sendPrompt = async () => {
     );
       
     try {
-      var sQuestion = "Hello, world!"
-      const response = await client.getCompletions(process.env.DEPLOYMENT_ID, [sQuestion]);
+      var prompt = "Hello, world!"
+      const response = await client.getCompletions(process.env.DEPLOYMENT_ID, [prompt]);
       console.log(response)
     } catch (error) {
       console.log(error)
